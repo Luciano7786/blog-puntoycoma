@@ -7,7 +7,9 @@ export const CATEGORIAS = {
   INFORMATICA: 'INFORMÁTICA',
   FRONTEND: 'FRONT-END',
   BACKEND: 'BACK-END',
-  HERRAMIENTAS: 'HERRAMIENTAS'
+  HERRAMIENTAS: 'HERRAMIENTAS',
+  REDES: 'REDES',
+  SISTEMAS: 'SISTEMAS'
 };
 
 export function ProveedorCategorias({ children }) {

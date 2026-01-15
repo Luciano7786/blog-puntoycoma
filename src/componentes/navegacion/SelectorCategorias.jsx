@@ -1,6 +1,6 @@
 import React from 'react';
 import { usarCategoria, CATEGORIAS } from '../../contextos/CategoriaContexto';
-import { Laptop, Database, Wrench, Cpu } from 'lucide-react';
+import { Laptop, Database, Wrench, Cpu, Network, Terminal } from 'lucide-react';
 
 const SelectorCategorias = () => {
   const { categoriaActiva, setCategoriaActiva } = usarCategoria();
@@ -11,6 +11,8 @@ const SelectorCategorias = () => {
     { id: CATEGORIAS.FRONTEND, etiqueta: 'FRONT-END', icono: <Laptop className="w-4 h-4" /> },
     { id: CATEGORIAS.BACKEND, etiqueta: 'BACK-END', icono: <Database className="w-4 h-4" /> },
     { id: CATEGORIAS.HERRAMIENTAS, etiqueta: 'HERRAMIENTAS', icono: <Wrench className="w-4 h-4" /> },
+    { id: CATEGORIAS.REDES, etiqueta: 'REDES DE DATOS', icono: <Network className="w-4 h-4" /> },
+    { id: CATEGORIAS.SISTEMAS, etiqueta: 'SISTEMAS OPERATIVOS', icono: <Terminal className="w-4 h-4" /> },
   ];
 
   return (

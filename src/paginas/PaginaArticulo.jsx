@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Tag, Terminal } from 'lucide-react';
 import { obtenerArticuloPorId } from '../servicios/blogServicio';
+import BotonMeGusta from '../componentes/ui/BotonMeGusta';
 
 const PaginaArticulo = () => {
   const { id } = useParams();
@@ -17,6 +18,48 @@ const PaginaArticulo = () => {
     };
     cargarArticulo();
   }, [id]);
+
+  // Manejar funcionalidad de copiado post-renderizado
+  useEffect(() => {
+    if (!articulo) return;
+
+    // Asegurar que el DOM se haya actualizado con el contenido peligroso
+    const timer = setTimeout(() => {
+      const botones = document.querySelectorAll('.btn-copiar');
+      
+      const manejarClick = async (e) => {
+        const boton = e.currentTarget;
+        const wrapper = boton.closest('.group'); // Usamos .group que es el wrapper que pusimos
+        const codigoElement = wrapper?.querySelector('code');
+        
+        if (codigoElement) {
+          const codigo = codigoElement.innerText;
+          try {
+            await navigator.clipboard.writeText(codigo);
+            
+            // Feedback Visual (Icono Check)
+            boton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+            
+            setTimeout(() => {
+              // Restaurar Icono Original (Clipboard)
+              boton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+            }, 2000);
+          } catch (err) {
+            console.error('Error al copiar:', err);
+          }
+        }
+      };
+
+      botones.forEach(btn => btn.addEventListener('click', manejarClick));
+
+      // Cleanup
+      return () => {
+        botones.forEach(btn => btn.removeEventListener('click', manejarClick));
+      };
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [articulo]);
 
   if (cargando) {
     return (
@@ -68,6 +111,11 @@ const PaginaArticulo = () => {
           ))}
         </div>
       </header>
+      
+      {/* Botón de Like Superior */}
+      <div className="flex justify-center mb-8">
+        <BotonMeGusta idArticulo={id} />
+      </div>
 
       <div className="prose prose-invert prose-green max-w-none font-sans text-gray-300 leading-relaxed">
         {/* En una app real, esto sería Markdown renderizado */}
@@ -79,6 +127,10 @@ const PaginaArticulo = () => {
           className="whitespace-pre-wrap font-mono text-sm bg-black/50 p-6 rounded border border-gray-800"
           dangerouslySetInnerHTML={{ __html: articulo.contenido + '\n\n// FIN DEL ARCHIVO' }}
         />
+        
+        <div className="mt-12 flex justify-center">
+          <BotonMeGusta idArticulo={id} />
+        </div>
       </div>
     </article>
   );

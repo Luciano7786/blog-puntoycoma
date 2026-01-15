@@ -5,6 +5,7 @@ import { ProveedorCategorias } from '../contextos/CategoriaContexto';
 // Layout Components
 import BarraNavegacion from '../componentes/navegacion/BarraNavegacion';
 import PieDePagina from '../componentes/estructura/PieDePagina';
+import BotonSubir from '../componentes/ui/BotonSubir';
 
 // Pages
 import PaginaInicio from '../paginas/PaginaInicio';
@@ -33,6 +34,7 @@ function Aplicacion() {
           </main>
 
           <PieDePagina />
+          <BotonSubir />
         </div>
       </Router>
     </ProveedorCategorias>
