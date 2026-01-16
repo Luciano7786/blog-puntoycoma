@@ -3,16 +3,21 @@ import { Heart } from 'lucide-react';
 import { db } from '../../lib/firebase';
 import { doc, onSnapshot, updateDoc, increment, setDoc, getDoc } from 'firebase/firestore';
 
-const BotonMeGusta = ({ idArticulo }) => {
+const BotonMeGusta = ({ idArticulo, liked, onLike }) => {
   const [likes, setLikes] = useState(0);
-  const [leGusto, setLeGusto] = useState(false);
+  const [leGustoLocal, setLeGustoLocal] = useState(false);
   const [animando, setAnimando] = useState(false);
 
+  // Determinar si le gusta usando la prop (si existe) o el estado local
+  const leGusto = liked !== undefined ? liked : leGustoLocal;
+
   useEffect(() => {
-    // 1. Cargar estado local (si el usuario ya dio like desde este navegador)
-    const likeGuardado = localStorage.getItem(`blog_like_${idArticulo}`);
-    if (likeGuardado) {
-      setLeGusto(true);
+    // 1. Cargar estado local SOLO si no se controla por props
+    if (liked === undefined) {
+      const likeGuardado = localStorage.getItem(`blog_like_${idArticulo}`);
+      if (likeGuardado) {
+        setLeGustoLocal(true);
+      }
     }
 
     // 2. Suscribirse a cambios en Firestore en tiempo real
@@ -27,14 +32,20 @@ const BotonMeGusta = ({ idArticulo }) => {
     });
 
     return () => unsubscribe();
-  }, [idArticulo]);
+  }, [idArticulo, liked]);
 
   const manejarClick = async () => {
     if (leGusto) return; // Evitar múltiples likes del mismo usuario
 
     setAnimando(true);
-    setLeGusto(true);
-    localStorage.setItem(`blog_like_${idArticulo}`, 'true');
+    
+    // Actualizar estado visual inmediatamente
+    if (onLike) {
+      onLike();
+    } else {
+      setLeGustoLocal(true);
+      localStorage.setItem(`blog_like_${idArticulo}`, 'true');
+    }
 
     // Referencia al documento en Firestore
     const docRef = doc(db, "likes", idArticulo);

@@ -8,6 +8,22 @@ const PaginaArticulo = () => {
   const { id } = useParams();
   const [articulo, setArticulo] = useState(null);
   const [cargando, setCargando] = useState(true);
+  const [yaLeGusto, setYaLeGusto] = useState(false);
+
+  // Inicializar estado de like desde localStorage
+  useEffect(() => {
+    const likeGuardado = localStorage.getItem(`blog_like_${id}`);
+    if (likeGuardado) {
+      setYaLeGusto(true);
+    } else {
+      setYaLeGusto(false);
+    }
+  }, [id]);
+
+  const manejarLike = () => {
+    setYaLeGusto(true);
+    localStorage.setItem(`blog_like_${id}`, 'true');
+  };
 
   useEffect(() => {
     const cargarArticulo = async () => {
@@ -115,7 +131,11 @@ const PaginaArticulo = () => {
       
       {/* Botón de Like Superior */}
       <div className="flex justify-center mb-8">
-        <BotonMeGusta idArticulo={id} />
+        <BotonMeGusta 
+          idArticulo={id} 
+          liked={yaLeGusto} 
+          onLike={manejarLike} 
+        />
       </div>
 
       <div className="prose prose-invert prose-green max-w-none font-sans text-gray-300 leading-relaxed">
@@ -130,7 +150,11 @@ const PaginaArticulo = () => {
         />
         
         <div className="mt-12 flex justify-center">
-          <BotonMeGusta idArticulo={id} />
+          <BotonMeGusta 
+            idArticulo={id} 
+            liked={yaLeGusto} 
+            onLike={manejarLike} 
+          />
         </div>
       </div>
     </article>

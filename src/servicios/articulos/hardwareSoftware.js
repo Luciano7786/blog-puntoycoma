@@ -176,7 +176,7 @@ export const hardwareSoftware = {
 
 <div class="mb-12">
   <p class="mb-6 text-lg">
-    Si quieres profundizar más sobre el tema, te recomiendo ver este excelente video explicativo:
+    Si prefieres ver un video explicativo, te recomiendo ver este excelente video:
   </p>
   <div class="relative w-full overflow-hidden rounded-xl border border-ciber-verde/30 shadow-[0_0_20px_rgba(34,197,94,0.1)]" style="padding-top: 56.25%;">
     <iframe 
