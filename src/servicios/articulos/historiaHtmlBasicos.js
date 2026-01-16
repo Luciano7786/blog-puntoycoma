@@ -5,10 +5,10 @@ export const historiaHtmlBasicos = {
   titulo: 'Introducción a HTML: Historia y Fundamentos',
   resumen: 'Descubre qué es HTML, su historia y cómo funciona la estructura básica de una página web. Ideal para principiantes.',
   contenido: `
-<h2 class="text-2xl font-bold text-white mt-8 mb-4">Introducción: El Esqueleto de la Web</h2>
+<h2 class="text-2xl font-bold text-white mt-12 mb-4">Introducción: El Esqueleto de la Web</h2>
 
 <p class="mb-4 text-gray-300">
-  Imagina que vas a construir una casa. Antes de pintar las paredes (CSS) o instalar alarmas, calefacción, etc. (JavaScript), necesitas los cimientos, las vigas y las paredes. Eso es <strong>HTML</strong> en el mundo web.
+  Imagina que vas a construir una casa. Antes de pintar las paredes (CSS) o instalar alarmas, calefacción, etc. (JavaScript), necesitas los cimientos, las vigas y las paredes. Eso es <span class="text-ciber-verde font-bold">HTML</span> en el mundo web.
 </p>
 
 <p class="mb-4 text-gray-300">
@@ -18,7 +18,7 @@ export const historiaHtmlBasicos = {
 <ul class="list-none space-y-2 mb-8 ml-4">
   <li class="flex items-center">
     <span class="text-ciber-verde mr-2 font-bold">1.</span>
-    <span><strong class="text-white">HTML (HyperText Markup Language):</strong> Es el <strong>esqueleto</strong>. Define dónde va la cabeza, los brazos, las piernas. Da la estructura.</span>
+    <span><strong class="text-white">HTML (HyperText Markup Language):</strong> Es el <span class="text-ciber-verde font-bold">esqueleto</span>. Define dónde va la cabeza, los brazos, las piernas. Da la estructura.</span>
   </li>
   <li class="flex items-center">
     <span class="text-ciber-verde mr-2 font-bold">2.</span>
@@ -32,14 +32,14 @@ export const historiaHtmlBasicos = {
 
 <div class="bg-gray-800/50 border-l-4 border-ciber-rosa p-4 my-6">
   <p class="text-gray-300">
-    <strong class="text-ciber-rosa">¡Importante!</strong> Mucha gente confunde esto, pero <strong>HTML NO es un lenguaje de programación</strong>.
-    Es un lenguaje de <strong>marcado</strong> (markup). No sirve para hacer cálculos ni lógica (como sumar 2+2 o tomar decisiones), solo sirve para <strong>estructurar</strong> y <strong>organizar</strong> el contenido.
+    <strong class="text-ciber-rosa">¡Importante!</strong> Mucha gente confunde esto, pero <span class="text-ciber-verde font-bold">HTML NO es un lenguaje de programación</span>.
+    Es un lenguaje de <span class="text-ciber-verde font-bold">marcado</span> (markup). No sirve para hacer cálculos ni lógica (como sumar 2+2 o tomar decisiones), solo sirve para <span class="text-ciber-verde font-bold">estructurar</span> y <span class="text-ciber-verde font-bold">organizar</span> el contenido.
   </p>
 </div>
 
 <p class="mb-4 text-gray-300 mt-6">
-  Piensa en HTML como el <strong>idioma que utilizan los navegadores</strong> para interpretar el código de una página web. 
-  El navegador lee este código y lo <strong>renderiza</strong> (lo procesa visualmente); es decir, transforma esas instrucciones de texto en la página web atractiva que ves en tu pantalla.
+  Piensa en HTML como el <span class="text-ciber-verde font-bold">idioma que utilizan los navegadores</span> para interpretar el código de una página web. 
+  El navegador lee este código y lo <span class="text-ciber-verde font-bold">renderiza</span> (lo procesa visualmente); es decir, transforma esas instrucciones de texto en la página web atractiva que ves en tu pantalla.
 </p>
 
 <div class="border-b-2 border-ciber-verde/50 pb-2 mb-8 mt-12">
@@ -66,7 +66,7 @@ export const historiaHtmlBasicos = {
 <h2 class="text-2xl font-bold text-white mt-12 mb-4">¿Cómo funciona? Etiquetas y Elementos</h2>
 
 <p class="mb-4 text-gray-300">
-  HTML funciona mediante <strong>etiquetas</strong> (tags). Piensa en las etiquetas como "cajas" invisibles que le dicen al navegador qué hay dentro.
+  HTML funciona mediante <span class="text-ciber-verde font-bold">etiquetas</span> (tags). Piensa en las etiquetas como "cajas" invisibles que le dicen al navegador qué hay dentro.
 </p>
 
 <p class="mb-4 text-gray-300">
@@ -99,7 +99,7 @@ Aquí va el contenido
   Para escribir código necesitamos herramientas adecuadas. Los desarrolladores usamos entornos de desarrollo (IDE) o editores de código modernos.
 </p>
 <p class="mb-4 text-gray-300">
-  El estándar absoluto de la industria hoy en día es Visual Studio Code (VS Code). Es gratuito, potente y nos ayuda coloreando el código y autocompletando las etiquetas.
+  El estándar absoluto de la industria hoy en día es <span class="text-ciber-verde font-bold">Visual Studio Code</span> (VS Code). Es gratuito, potente y nos ayuda coloreando el código y autocompletando las etiquetas.
 </p>
 
 <h2 class="text-2xl font-bold text-white mt-12 mb-4">¡Manos a la Obra! Tu Primer Archivo</h2>
@@ -339,7 +339,7 @@ Aquí va el contenido
 
 <h2 class="text-2xl font-bold text-white mt-12 mb-4">Video Complementario</h2>
 
-<p class="mb-4 text-gray-300">
+<p class="mb-6 text-lg text-gray-300">
   Si prefieres aprender viendo, te recomiendo este video que explica los conceptos básicos de forma muy clara:
 </p>
 
@@ -351,11 +351,11 @@ Aquí va el contenido
   <h2 class="text-3xl font-black text-ciber-verde tracking-wider">CONCLUSIÓN</h2>
 </div>
 
-<p class="mb-4 text-gray-300">
+<p class="mb-4 font-medium text-lg text-gray-300">
   HTML es un lenguaje de marcado de etiquetas que permite crear la estructura de una página web. 
 </p>
 
-<p class="mb-8 text-gray-300">
+<p class="mb-8 font-medium text-lg text-gray-300">
   ¡Esto es solo el comienzo! En futuras notas nos sumergiremos de a poco en el mundo de HTML y aprenderemos mas cosas.
 </p>
 
@@ -366,5 +366,5 @@ Aquí va el contenido
 `,
   fecha: '2026-01-14',
   categoria: CATEGORIAS.FRONTEND,
-  tags: ['html', 'frontend', 'web', 'historia', 'principiantes', 'desarrollo']
+  tags: ['html', 'frontend', 'desarrollo-web', 'etiquetas', 'tim-berners-lee', 'estructura']
 };

@@ -19,7 +19,7 @@ En conclusión, la <span class="text-ciber-verde font-bold">Informática</span> 
   <h2 class="text-3xl font-black text-ciber-verde tracking-wider">ERA PRE-MECÁNICA</h2>
 </div>
 
-<h2 class="text-2xl font-bold text-white mt-8 mb-4">El Abuelo de las Computadoras: El Ábaco</h2>
+<h2 class="text-2xl font-bold text-white mt-12 mb-4">El Abuelo de las Computadoras: El Ábaco</h2>
 
 Las computadoras de hoy tienen una familia muy antigua. Uno de sus primeros antepasados fue el <span class="text-ciber-verde font-bold">Ábaco</span> (origen en Mesopotamia aprox. 2700-2300 a.C., popularizado en China).
 La historia nos dice que nació en la antigua <span class="text-ciber-verde font-bold">China</span>, aunque griegos y romanos también lo usaban.
@@ -29,7 +29,7 @@ Al mover estas cuentas de un lado a otro, podemos representar números y valores
 
 <img src="/imagenes/evolucionInformatica/abaco.png" alt="Fotografía antigua de un ábaco de madera" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
-<div class="border-b-2 border-ciber-verde/50 pb-2 mb-8 mt-12">
+<div class="border-b-2 border-ciber-verde/50 pb-2 mb-8 mt-16">
   <h2 class="text-3xl font-black text-ciber-verde tracking-wider">ERA MECÁNICA</h2>
 </div>
 
@@ -136,10 +136,10 @@ La miniaturización dio otro salto gigante con el <span class="text-ciber-verde 
 <img src="/imagenes/evolucionInformatica/circuitos-integrados.webp" alt="Primer plano de un circuito integrado antiguo" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
 
-En esta época (1965), **Gordon Moore** formuló la ley que lleva su nombre, prediciendo la duplicación exponencial de transistores.
-Además, en 1969 se activó **ARPANET**, la red precursora de Internet.
+En esta época (1965), <span class="text-ciber-verde font-bold">Gordon Moore</span> formuló la ley que lleva su nombre, prediciendo la duplicación exponencial de transistores.
+Además, en 1969 se activó <span class="text-ciber-verde font-bold">ARPANET</span>, la red precursora de Internet.
 
-Las computadoras ahora tenían **Sistemas Operativos**, permitiendo ejecutar múltiples programas a la vez.
+Las computadoras ahora tenían <span class="text-ciber-verde font-bold">Sistemas Operativos</span>, permitiendo ejecutar múltiples programas a la vez.
 <h4 class="text-xl font-bold text-ciber-rosa mt-8 mb-2">IBM System/360 (1964)</h4>
 Fue la primera familia de computadoras diseñada para cubrir tanto aplicaciones científicas como comerciales, estandarizando la arquitectura de hardware.
 <img src="/imagenes/evolucionInformatica/IBMSYSTEM-360.webp" alt="Mainframe IBM System/360, la primera familia de computadoras compatible" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
@@ -169,25 +169,25 @@ La informática llegó a los hogares, escuelas y oficinas.
 <h3 class="text-2xl font-bold text-white mt-12 mb-4">5ª Generación: Hiperconectividad e Inteligencia Artificial (1982-Presente)</h3>
 Estamos viviéndola. Se caracteriza por la <span class="text-ciber-verde font-bold">Inteligencia Artificial</span>, el procesamiento en paralelo y la conectividad total.
 
-Con la adopción de TCP/IP en 1983, **Internet** nació y conectó al mundo, transformando la sociedad para siempre:
+Con la adopción de TCP/IP en 1983, <span class="text-ciber-verde font-bold">Internet</span> nació y conectó al mundo, transformando la sociedad para siempre:
 <img src="/imagenes/evolucionInformatica/internet.webp" alt="Representación conceptual del nacimiento de Internet" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
-Esta era también destaca por la **omnipresencia de los dispositivos móviles**, que han puesto el poder de una computadora en nuestros bolsillos:
+Esta era también destaca por la <span class="text-ciber-verde font-bold">omnipresencia de los dispositivos móviles</span>, que han puesto el poder de una computadora en nuestros bolsillos:
 <img src="/imagenes/evolucionInformatica/dispositivos-mobiles.webp" alt="Evolución de los dispositivos móviles inteligentes" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
-Y por las **redes informáticas** globales que permiten esta interconexión instantánea:
+Y por las <span class="text-ciber-verde font-bold">redes informáticas</span> globales que permiten esta interconexión instantánea:
 <img src="/imagenes/evolucionInformatica/redes-informaticas.webp" alt="Redes informáticas conectando el mundo" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
-El poder de cómputo personal ha alcanzado niveles increíbles, visible en el auge del **PC Gaming** de alto rendimiento:
+El poder de cómputo personal ha alcanzado niveles increíbles, visible en el auge del <span class="text-ciber-verde font-bold">PC Gaming</span> de alto rendimiento:
 <img src="/imagenes/evolucionInformatica/pc-gamer.webp" alt="Setup de PC Gamer de alto rendimiento" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
-Como ejemplo de la potencia actual, tenemos procesadores como el **AMD Ryzen 7 9800X3D**, que utiliza tecnología de apilamiento 3D (3D V-Cache) para maximizar el rendimiento en juegos y tareas complejas.
+Como ejemplo de la potencia actual, tenemos procesadores como el <span class="text-ciber-verde font-bold">AMD Ryzen 7 9800X3D</span>, que utiliza tecnología de apilamiento 3D (3D V-Cache) para maximizar el rendimiento en juegos y tareas complejas.
 <img src="/imagenes/evolucionInformatica/ryzen7-9800x3d.webp" alt="AMD Ryzen 7 9800X3D: La cúspide del rendimiento moderno con tecnología 3D V-Cache" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
-Todo esto respaldado por la infraestructura de la **Nube (Cloud Computing)**, donde residen nuestros datos y servicios:
+Todo esto respaldado por la infraestructura de la <span class="text-ciber-verde font-bold">Nube (Cloud Computing)</span>, donde residen nuestros datos y servicios:
 <img src="/imagenes/evolucionInformatica/nube.webp" alt="Infraestructura de computación en la nube" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
-El objetivo ya no es solo procesar datos, sino <em>aprender</em> de ellos. Sistemas LLM como **Gemini**, **Copilot**, **DeepSeek** y **Grok** definen esta era.
+El objetivo ya no es solo procesar datos, sino <em>aprender</em> de ellos. Sistemas LLM como <span class="text-ciber-verde font-bold">Gemini</span>, <span class="text-ciber-verde font-bold">Copilot</span>, <span class="text-ciber-verde font-bold">DeepSeek</span> y <span class="text-ciber-verde font-bold">Grok</span> definen esta era.
 <img src="/imagenes/evolucionInformatica/LLM.webp" alt="Representación de un Gran Modelo de Lenguaje (LLM)" class="w-full max-w-lg mx-auto rounded-lg border border-gray-700 shadow-lg mt-6 hover:border-ciber-verde transition-all duration-300" />
 
 Además, la <span class="text-ciber-verde font-bold">Computación Cuántica</span> promete resolver problemas imposibles para las computadoras clásicas.
@@ -197,7 +197,7 @@ Además, la <span class="text-ciber-verde font-bold">Computación Cuántica</spa
   <h2 class="text-3xl font-black text-ciber-verde tracking-wider">CONCLUSIÓN: EL FUTURO ES AHORA</h2>
 </div>
 
-<p class="mb-4 text-gray-300">
+<p class="mb-4 text-gray-300 font-medium text-lg">
   La evolución de la informática nos ha llevado a un punto donde la tecnología se define por características clave que moldean nuestro presente y futuro:
 </p>
 
@@ -239,5 +239,5 @@ Además, la <span class="text-ciber-verde font-bold">Computación Cuántica</spa
 `,
   fecha: '2026-01-13',
   categoria: CATEGORIAS.INFORMATICA,
-  tags: ['historia', 'tecnologia', 'innovacion', 'ia', 'hardware', 'software', 'internet', 'ciencia', 'computadoras']
+  tags: ['historia-informatica', 'generaciones', 'informacion-automatica', 'procesamiento', 'evolucion', 'inventos']
 };
