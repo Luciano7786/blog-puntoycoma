@@ -225,6 +225,36 @@ Aquí va el contenido
   </button>
 </div>
 
+<h3 class="text-xl font-bold text-white mt-8 mb-4">Notas Invisibles: Los Comentarios</h3>
+
+<p class="mb-4 text-gray-300">
+  Habrás notado algunas líneas en el código anterior que empiezan con <code class="text-ciber-rosa">&lt;!--</code> y terminan con <code class="text-ciber-rosa">--&gt;</code>.
+</p>
+
+<p class="mb-4 text-gray-300">
+  ¡Esos son <span class="text-ciber-verde font-bold">comentarios</span>! El navegador <strong>ignora</strong> completamente esas líneas; no se muestran en la página web final.
+</p>
+
+<p class="mb-4 text-gray-300">
+  Sirven para dejar notas para ti mismo ("aquí empieza el menú") o para otros programadores que lean tu código.
+</p>
+
+<div class="relative group my-6">
+  <pre class="bg-black rounded-lg p-4 font-mono text-sm text-gray-300 border border-gray-700 overflow-x-auto">
+<code class="language-html">
+<span class="text-gray-500">&lt;!-- Esto es un secreto, el usuario no lo verá --&gt;</span>
+&lt;p&gt;Esto sí se ve en la página&lt;/p&gt;
+</code>
+  </pre>
+</div>
+
+<div class="bg-gray-800/50 border-l-4 border-yellow-500 p-4 my-6">
+  <h4 class="font-bold text-yellow-500 mb-2">💡 Pro Tip: Atajo Rápido</h4>
+  <p class="text-gray-300 text-sm">
+    No necesitas memorizar todo esto de golpe. En VS Code, si escribes un signo de exclamación <strong class="text-white bg-gray-700 px-1 rounded">!</strong> y presionas <strong>Tab</strong> o <strong>Enter</strong>, ¡se generará toda la estructura básica automáticamente!
+  </p>
+</div>
+
 <h3 class="text-xl font-bold text-ciber-rosa mt-4 mb-2 !my-2">Elementos Básicos para Empezar</h3>
 
 <div class="space-y-0 not-prose">
